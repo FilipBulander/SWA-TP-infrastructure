@@ -43,5 +43,7 @@ services:
     image: 19960701/swa-ads:latest
     ports:
       - 9698:9698
+    env_file:
+      - envs/ad-service.env
 volumes:
   swa-user-service-db-vol:
